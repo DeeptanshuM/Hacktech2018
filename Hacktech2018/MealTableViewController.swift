@@ -99,6 +99,18 @@ class MealTableViewController: UITableViewController {
     }
     */
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToCamera", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationViewController = segue.destination as! ViewController
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationViewController.foodScene = meals[indexPath.row]
+        }
+    }
+    
     func loadMeals() {
         print("here")
         guard let muffin = Meal(name: "Muffin") else {

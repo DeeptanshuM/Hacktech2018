@@ -45,6 +45,9 @@
                             <outlet property="delegate" destination="Ard-KC-USd" id="Xhp-gd-myQ"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToCamera" id="f1k-cP-FGs"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSc-8Z-eTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var foodScene:Meal? = nil
 
   override func viewDidLoad() {
     super.viewDidLoad()
