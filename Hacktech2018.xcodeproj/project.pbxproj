@@ -14,6 +14,9 @@
 		AE257397204B780B00993362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE257396204B780B00993362 /* Assets.xcassets */; };
 		AE25739A204B780B00993362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE257398204B780B00993362 /* LaunchScreen.storyboard */; };
 		AE482E81204BFBF5006537EF /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE482E80204BFBF5006537EF /* ARViewController.swift */; };
+		AE482E85204C078B006537EF /* materials.mtl in Resources */ = {isa = PBXBuildFile; fileRef = AE482E83204C078B006537EF /* materials.mtl */; };
+		AE482E86204C078C006537EF /* texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE482E84204C078B006537EF /* texture.jpg */; };
+		AE482E88204C07BE006537EF /* Fruit Bar.scn in Resources */ = {isa = PBXBuildFile; fileRef = AE482E87204C07BE006537EF /* Fruit Bar.scn */; };
 		D6A0C3FE204BED79006042F9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0C3FD204BED79006042F9 /* Meal.swift */; };
 		D6A0C401204BEF46006042F9 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0C3FF204BEF46006042F9 /* MealTableViewController.swift */; };
 		D6A0C402204BEF46006042F9 /* MealTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A0C400204BEF46006042F9 /* MealTableViewController.xib */; };
@@ -30,6 +33,9 @@
 		AE257399204B780B00993362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE25739B204B780B00993362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE482E80204BFBF5006537EF /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		AE482E83204C078B006537EF /* materials.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = materials.mtl; sourceTree = "<group>"; };
+		AE482E84204C078B006537EF /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture.jpg; sourceTree = "<group>"; };
+		AE482E87204C07BE006537EF /* Fruit Bar.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Fruit Bar.scn"; sourceTree = "<group>"; };
 		D6A0C3FD204BED79006042F9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		D6A0C3FF204BEF46006042F9 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		D6A0C400204BEF46006042F9 /* MealTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewController.xib; sourceTree = "<group>"; };
@@ -66,6 +72,7 @@
 		AE25738B204B780B00993362 /* Hacktech2018 */ = {
 			isa = PBXGroup;
 			children = (
+				AE482E82204C06C9006537EF /* 3D Objects */,
 				D6A0C403204BF2C2006042F9 /* MealTableViewCell.swift */,
 				AE482E80204BFBF5006537EF /* ARViewController.swift */,
 				AE25738E204B780B00993362 /* ViewController.swift */,
@@ -80,6 +87,16 @@
 				AE257393204B780B00993362 /* Hacktech2018.xcdatamodeld */,
 			);
 			path = Hacktech2018;
+			sourceTree = "<group>";
+		};
+		AE482E82204C06C9006537EF /* 3D Objects */ = {
+			isa = PBXGroup;
+			children = (
+				AE482E87204C07BE006537EF /* Fruit Bar.scn */,
+				AE482E83204C078B006537EF /* materials.mtl */,
+				AE482E84204C078B006537EF /* texture.jpg */,
+			);
+			path = "3D Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +158,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE482E85204C078B006537EF /* materials.mtl in Resources */,
 				AE25739A204B780B00993362 /* LaunchScreen.storyboard in Resources */,
 				AE257397204B780B00993362 /* Assets.xcassets in Resources */,
+				AE482E86204C078C006537EF /* texture.jpg in Resources */,
 				D6A0C402204BEF46006042F9 /* MealTableViewController.xib in Resources */,
+				AE482E88204C07BE006537EF /* Fruit Bar.scn in Resources */,
 				AE257392204B780B00993362 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,11 +319,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8S559C7XJA;
+				DEVELOPMENT_TEAM = 8R2RDVLJNC;
 				INFOPLIST_FILE = Hacktech2018/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.goli.ram.hacktech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeeptanshuMalik.hacktech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,11 +335,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8S559C7XJA;
+				DEVELOPMENT_TEAM = 8R2RDVLJNC;
 				INFOPLIST_FILE = Hacktech2018/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.goli.ram.hacktech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeeptanshuMalik.hacktech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

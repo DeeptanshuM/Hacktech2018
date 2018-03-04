@@ -18,9 +18,6 @@ class ARViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     addTapGestureToSceneView()
-    
-    let fileName = sceneName! + ".scn"
-    print(fileName)
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -58,21 +55,9 @@ class ARViewController: UIViewController {
     let z = translation.z
     
     let fileName = sceneName! + ".scn"
-    print(fileName)
-    
-    //    guard let shipScene = SCNScene(named: "chocolate_bar.scn"),
-    //      let shipNode = shipScene.rootNode.childNode(withName: "container", recursively: false)
-    //      else { print("WTF");return }
-    
-    //        guard let shipScene = SCNScene(named: "bagel.scn"),
-    //          let shipNode = shipScene.rootNode.childNode(withName: "bagel", recursively: false)
-    //          else { print("WTF");return }
-    
-    //    guard let shipScene = SCNScene(named: "chicken.scn"),
-    //      let shipNode = shipScene.rootNode.childNode(withName: "container", recursively: false)
-    //      else { print("WTF");return }
-    
-    guard let shipScene = SCNScene(named: "DisneyDessert.scn"),
+    //print(fileName)
+
+    guard let shipScene = SCNScene(named: fileName),
       let shipNode = shipScene.rootNode.childNode(withName: "container", recursively: false)
       else { print("WTF");return }
     shipNode.position = SCNVector3(x,y,z)
