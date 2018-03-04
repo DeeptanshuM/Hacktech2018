@@ -112,8 +112,8 @@ class MealTableViewController: UITableViewController {
     }
     
     func loadMeals() {
-        guard let muffin = Meal(name: "Muffin") else {
-            fatalError("could not creat a muffin")
+        guard let chicken = Meal(name: "Chicken") else {
+            fatalError("could not create a chicken!")
         }
         
         guard let bagel = Meal(name: "Bagel") else {
@@ -128,7 +128,7 @@ class MealTableViewController: UITableViewController {
             fatalError("could not create a cookie")
         }
         
-        meals += [muffin, bagel, fruitBar, dessert]
+        meals += [chicken, bagel, fruitBar, dessert]
     }
     
 }
