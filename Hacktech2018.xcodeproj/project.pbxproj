@@ -20,6 +20,9 @@
 		AE482E8C204C0C2E006537EF /* materials2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = AE482E89204C0C2A006537EF /* materials2.mtl */; };
 		AE482E8D204C0C2E006537EF /* texture2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE482E8A204C0C2B006537EF /* texture2.jpg */; };
 		AE482E8E204C0C2E006537EF /* Bagel.scn in Resources */ = {isa = PBXBuildFile; fileRef = AE482E8B204C0C2E006537EF /* Bagel.scn */; };
+		AE482E92204C0C92006537EF /* texture3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE482E8F204C0C8E006537EF /* texture3.jpg */; };
+		AE482E93204C0C92006537EF /* Chicken.scn in Resources */ = {isa = PBXBuildFile; fileRef = AE482E90204C0C91006537EF /* Chicken.scn */; };
+		AE482E94204C0C92006537EF /* materials3.mtl in Resources */ = {isa = PBXBuildFile; fileRef = AE482E91204C0C91006537EF /* materials3.mtl */; };
 		D6A0C3FE204BED79006042F9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0C3FD204BED79006042F9 /* Meal.swift */; };
 		D6A0C401204BEF46006042F9 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0C3FF204BEF46006042F9 /* MealTableViewController.swift */; };
 		D6A0C402204BEF46006042F9 /* MealTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A0C400204BEF46006042F9 /* MealTableViewController.xib */; };
@@ -42,6 +45,9 @@
 		AE482E89204C0C2A006537EF /* materials2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = materials2.mtl; sourceTree = "<group>"; };
 		AE482E8A204C0C2B006537EF /* texture2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture2.jpg; sourceTree = "<group>"; };
 		AE482E8B204C0C2E006537EF /* Bagel.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Bagel.scn; sourceTree = "<group>"; };
+		AE482E8F204C0C8E006537EF /* texture3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture3.jpg; sourceTree = "<group>"; };
+		AE482E90204C0C91006537EF /* Chicken.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Chicken.scn; sourceTree = "<group>"; };
+		AE482E91204C0C91006537EF /* materials3.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = materials3.mtl; sourceTree = "<group>"; };
 		D6A0C3FD204BED79006042F9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		D6A0C3FF204BEF46006042F9 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		D6A0C400204BEF46006042F9 /* MealTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewController.xib; sourceTree = "<group>"; };
@@ -98,6 +104,9 @@
 		AE482E82204C06C9006537EF /* 3D Objects */ = {
 			isa = PBXGroup;
 			children = (
+				AE482E90204C0C91006537EF /* Chicken.scn */,
+				AE482E91204C0C91006537EF /* materials3.mtl */,
+				AE482E8F204C0C8E006537EF /* texture3.jpg */,
 				AE482E8B204C0C2E006537EF /* Bagel.scn */,
 				AE482E89204C0C2A006537EF /* materials2.mtl */,
 				AE482E8A204C0C2B006537EF /* texture2.jpg */,
@@ -168,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE482E85204C078B006537EF /* materials.mtl in Resources */,
+				AE482E94204C0C92006537EF /* materials3.mtl in Resources */,
 				AE482E8D204C0C2E006537EF /* texture2.jpg in Resources */,
+				AE482E92204C0C92006537EF /* texture3.jpg in Resources */,
 				AE25739A204B780B00993362 /* LaunchScreen.storyboard in Resources */,
 				AE257397204B780B00993362 /* Assets.xcassets in Resources */,
 				AE482E8E204C0C2E006537EF /* Bagel.scn in Resources */,
@@ -176,6 +187,7 @@
 				D6A0C402204BEF46006042F9 /* MealTableViewController.xib in Resources */,
 				AE482E8C204C0C2E006537EF /* materials2.mtl in Resources */,
 				AE482E88204C07BE006537EF /* Fruit Bar.scn in Resources */,
+				AE482E93204C0C92006537EF /* Chicken.scn in Resources */,
 				AE257392204B780B00993362 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
