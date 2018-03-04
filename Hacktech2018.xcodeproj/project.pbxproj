@@ -23,6 +23,9 @@
 		AE482E92204C0C92006537EF /* texture3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE482E8F204C0C8E006537EF /* texture3.jpg */; };
 		AE482E93204C0C92006537EF /* Chicken.scn in Resources */ = {isa = PBXBuildFile; fileRef = AE482E90204C0C91006537EF /* Chicken.scn */; };
 		AE482E94204C0C92006537EF /* materials3.mtl in Resources */ = {isa = PBXBuildFile; fileRef = AE482E91204C0C91006537EF /* materials3.mtl */; };
+		AE482E98204C0DE8006537EF /* texture4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE482E95204C0DE5006537EF /* texture4.jpg */; };
+		AE482E99204C0DE8006537EF /* Dessert.scn in Resources */ = {isa = PBXBuildFile; fileRef = AE482E96204C0DE7006537EF /* Dessert.scn */; };
+		AE482E9A204C0DE8006537EF /* materials4.mtl in Resources */ = {isa = PBXBuildFile; fileRef = AE482E97204C0DE8006537EF /* materials4.mtl */; };
 		D6A0C3FE204BED79006042F9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0C3FD204BED79006042F9 /* Meal.swift */; };
 		D6A0C401204BEF46006042F9 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0C3FF204BEF46006042F9 /* MealTableViewController.swift */; };
 		D6A0C402204BEF46006042F9 /* MealTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A0C400204BEF46006042F9 /* MealTableViewController.xib */; };
@@ -48,6 +51,9 @@
 		AE482E8F204C0C8E006537EF /* texture3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture3.jpg; sourceTree = "<group>"; };
 		AE482E90204C0C91006537EF /* Chicken.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Chicken.scn; sourceTree = "<group>"; };
 		AE482E91204C0C91006537EF /* materials3.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = materials3.mtl; sourceTree = "<group>"; };
+		AE482E95204C0DE5006537EF /* texture4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture4.jpg; sourceTree = "<group>"; };
+		AE482E96204C0DE7006537EF /* Dessert.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Dessert.scn; sourceTree = "<group>"; };
+		AE482E97204C0DE8006537EF /* materials4.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = materials4.mtl; sourceTree = "<group>"; };
 		D6A0C3FD204BED79006042F9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		D6A0C3FF204BEF46006042F9 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		D6A0C400204BEF46006042F9 /* MealTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewController.xib; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 		AE482E82204C06C9006537EF /* 3D Objects */ = {
 			isa = PBXGroup;
 			children = (
+				AE482E96204C0DE7006537EF /* Dessert.scn */,
+				AE482E97204C0DE8006537EF /* materials4.mtl */,
+				AE482E95204C0DE5006537EF /* texture4.jpg */,
 				AE482E90204C0C91006537EF /* Chicken.scn */,
 				AE482E91204C0C91006537EF /* materials3.mtl */,
 				AE482E8F204C0C8E006537EF /* texture3.jpg */,
@@ -178,17 +187,20 @@
 			files = (
 				AE482E85204C078B006537EF /* materials.mtl in Resources */,
 				AE482E94204C0C92006537EF /* materials3.mtl in Resources */,
+				AE482E98204C0DE8006537EF /* texture4.jpg in Resources */,
 				AE482E8D204C0C2E006537EF /* texture2.jpg in Resources */,
 				AE482E92204C0C92006537EF /* texture3.jpg in Resources */,
 				AE25739A204B780B00993362 /* LaunchScreen.storyboard in Resources */,
 				AE257397204B780B00993362 /* Assets.xcassets in Resources */,
 				AE482E8E204C0C2E006537EF /* Bagel.scn in Resources */,
+				AE482E99204C0DE8006537EF /* Dessert.scn in Resources */,
 				AE482E86204C078C006537EF /* texture.jpg in Resources */,
 				D6A0C402204BEF46006042F9 /* MealTableViewController.xib in Resources */,
 				AE482E8C204C0C2E006537EF /* materials2.mtl in Resources */,
 				AE482E88204C07BE006537EF /* Fruit Bar.scn in Resources */,
 				AE482E93204C0C92006537EF /* Chicken.scn in Resources */,
 				AE257392204B780B00993362 /* Main.storyboard in Resources */,
+				AE482E9A204C0DE8006537EF /* materials4.mtl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
