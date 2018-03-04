@@ -6,14 +6,14 @@
 //  Copyright © 2018 Deeptanshu. All rights reserved.
 //
 
+// Relied on this appcoda tutorial, by Jayven N, to make this class: https://www.appcoda.com/arkit-horizontal-plane/
 import UIKit
 import ARKit
 
 class ARViewController: UIViewController {
 
   var sceneName:String? = nil
-    
-    
+  
   @IBOutlet weak var sceneView: ARSCNView!
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -44,7 +44,7 @@ class ARViewController: UIViewController {
     sceneView.automaticallyUpdatesLighting = true
   }
   
-  @objc func addShipToSceneView(withGestureRecognizer recognizer: UIGestureRecognizer) {
+  @objc func addfoodToSceneView(withGestureRecognizer recognizer: UIGestureRecognizer) {
     let tapLocation = recognizer.location(in: sceneView)
     let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
     
@@ -57,15 +57,15 @@ class ARViewController: UIViewController {
     let fileName = sceneName! + ".scn"
     //print(fileName)
 
-    guard let shipScene = SCNScene(named: fileName),
-      let shipNode = shipScene.rootNode.childNode(withName: "container", recursively: false)
+    guard let foodScene = SCNScene(named: fileName),
+      let foodNode = foodScene.rootNode.childNode(withName: "container", recursively: false)
       else { print("WTF");return }
-    shipNode.position = SCNVector3(x,y,z)
-    sceneView.scene.rootNode.addChildNode(shipNode)
+    foodNode.position = SCNVector3(x,y,z)
+    sceneView.scene.rootNode.addChildNode(foodNode)
   }
   
   func addTapGestureToSceneView() {
-    let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.addShipToSceneView(withGestureRecognizer:)))
+    let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.addfoodToSceneView(withGestureRecognizer:)))
     sceneView.addGestureRecognizer(tapGestureRecognizer)
   }
 }
