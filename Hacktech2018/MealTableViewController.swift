@@ -9,7 +9,7 @@
 import UIKit
 
 class MealTableViewController: UITableViewController {
-    
+  
     var meals = [Meal]()
         
     override func viewDidLoad() {
