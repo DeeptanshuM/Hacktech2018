@@ -46,7 +46,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToCamera" id="f1k-cP-FGs"/>
+                        <segue destination="ogE-xp-5ea" kind="show" identifier="goToCamera" id="X9z-75-DLB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSc-8Z-eTF" userLabel="First Responder" sceneMemberID="firstResponder"/>

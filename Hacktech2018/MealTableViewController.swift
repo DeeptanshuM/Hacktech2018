@@ -104,15 +104,14 @@ class MealTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationViewController = segue.destination as! ViewController
+        let destinationViewController = segue.destination as! ARViewController
         
         if let indexPath = tableView.indexPathForSelectedRow {
-            destinationViewController.foodScene = meals[indexPath.row]
+            destinationViewController.sceneName = meals[indexPath.row].name
         }
     }
     
     func loadMeals() {
-        print("here")
         guard let muffin = Meal(name: "Muffin") else {
             fatalError("could not creat a muffin")
         }
@@ -121,11 +120,11 @@ class MealTableViewController: UITableViewController {
             fatalError("could not create a bagel")
         }
         
-        guard let fruitBar = Meal(name: "fruitBar") else {
+        guard let fruitBar = Meal(name: "Fruit Bar") else {
             fatalError("could not create a fruitbar")
         }
         
-        guard let dessert = Meal(name: "dessert") else {
+        guard let dessert = Meal(name: "Dessert") else {
             fatalError("could not create a cookie")
         }
         

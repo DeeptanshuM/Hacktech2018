@@ -67,7 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				D6A0C403204BF2C2006042F9 /* MealTableViewCell.swift */,
+				AE482E80204BFBF5006537EF /* ARViewController.swift */,
 				AE25738E204B780B00993362 /* ViewController.swift */,
+				D6A0C3FD204BED79006042F9 /* Meal.swift */,
 				AE257390204B780B00993362 /* Main.storyboard */,
 				D6A0C3FF204BEF46006042F9 /* MealTableViewController.swift */,
 				D6A0C400204BEF46006042F9 /* MealTableViewController.xib */,
@@ -76,8 +78,6 @@
 				AE257398204B780B00993362 /* LaunchScreen.storyboard */,
 				AE25739B204B780B00993362 /* Info.plist */,
 				AE257393204B780B00993362 /* Hacktech2018.xcdatamodeld */,
-				D6A0C3FD204BED79006042F9 /* Meal.swift */,
-				AE482E80204BFBF5006537EF /* ARViewController.swift */,
 			);
 			path = Hacktech2018;
 			sourceTree = "<group>";
@@ -299,11 +299,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8R2RDVLJNC;
+				DEVELOPMENT_TEAM = 8S559C7XJA;
 				INFOPLIST_FILE = Hacktech2018/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DeeptanshuMalik.Hacktech2018;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goli.ram.hacktech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,11 +315,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8R2RDVLJNC;
+				DEVELOPMENT_TEAM = 8S559C7XJA;
 				INFOPLIST_FILE = Hacktech2018/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DeeptanshuMalik.Hacktech2018;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goli.ram.hacktech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -11,10 +11,16 @@ import ARKit
 
 class ARViewController: UIViewController {
 
+  var sceneName:String? = nil
+    
+    
   @IBOutlet weak var sceneView: ARSCNView!
   override func viewDidLoad() {
     super.viewDidLoad()
     addTapGestureToSceneView()
+    
+    let fileName = sceneName! + ".scn"
+    print(fileName)
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -50,6 +56,9 @@ class ARViewController: UIViewController {
     let x = translation.x
     let y = translation.y
     let z = translation.z
+    
+    let fileName = sceneName! + ".scn"
+    print(fileName)
     
     //    guard let shipScene = SCNScene(named: "chocolate_bar.scn"),
     //      let shipNode = shipScene.rootNode.childNode(withName: "container", recursively: false)
