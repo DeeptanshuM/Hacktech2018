@@ -111,9 +111,10 @@ class MealTableViewController: UITableViewController {
           
           //////
           //Sending get requets to server
+            
+          let query = meals[indexPath.row].name.replacingOccurrences(of: " ", with: "_")
+          let url = URL(string: "http://1917a9e6.ngrok.io/foodtype?food=" + query)
           
-          let url = URL(string: "http://1917a9e6.ngrok.io/foodtype?food=" + meals[indexPath.row].name)
-          print(url)
           var request = URLRequest(url: url!)
           
           let task = URLSession.shared.dataTask(with: url!) { data, response, error in
