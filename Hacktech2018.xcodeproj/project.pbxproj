@@ -13,6 +13,7 @@
 		AE257395204B780B00993362 /* Hacktech2018.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE257393204B780B00993362 /* Hacktech2018.xcdatamodeld */; };
 		AE257397204B780B00993362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE257396204B780B00993362 /* Assets.xcassets */; };
 		AE25739A204B780B00993362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE257398204B780B00993362 /* LaunchScreen.storyboard */; };
+		D6A0C3FE204BED79006042F9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0C3FD204BED79006042F9 /* Meal.swift */; };
 		D6CDD5D2204B7EAD0042ADD1 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CDD5D1204B7EAD0042ADD1 /* MealTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		AE257396204B780B00993362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE257399204B780B00993362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE25739B204B780B00993362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A0C3FD204BED79006042F9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		D6CDD5D1204B7EAD0042ADD1 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,12 +62,13 @@
 			children = (
 				AE25738C204B780B00993362 /* AppDelegate.swift */,
 				AE25738E204B780B00993362 /* ViewController.swift */,
+				D6CDD5D1204B7EAD0042ADD1 /* MealTableViewCell.swift */,
 				AE257390204B780B00993362 /* Main.storyboard */,
 				AE257396204B780B00993362 /* Assets.xcassets */,
 				AE257398204B780B00993362 /* LaunchScreen.storyboard */,
 				AE25739B204B780B00993362 /* Info.plist */,
 				AE257393204B780B00993362 /* Hacktech2018.xcdatamodeld */,
-				D6CDD5D1204B7EAD0042ADD1 /* MealTableViewCell.swift */,
+				D6A0C3FD204BED79006042F9 /* Meal.swift */,
 			);
 			path = Hacktech2018;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A0C3FE204BED79006042F9 /* Meal.swift in Sources */,
 				D6CDD5D2204B7EAD0042ADD1 /* MealTableViewCell.swift in Sources */,
 				AE25738F204B780B00993362 /* ViewController.swift in Sources */,
 				AE25738D204B780B00993362 /* AppDelegate.swift in Sources */,
