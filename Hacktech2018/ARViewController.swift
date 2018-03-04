@@ -100,9 +100,9 @@ extension ARViewController: ARSCNViewDelegate {
     let width = CGFloat(planeAnchor.extent.x)
     let height = CGFloat(planeAnchor.extent.z)
     let plane = SCNPlane(width: width, height: height)
-    //let plane = SCNCylinder(radius: width, height: height, orientation: .horizontal);
-   
+    //let plane = SCNCylinder(radius: width, height: height);
     plane.materials.first?.diffuse.contents = UIColor.transparentLightBlue
+    
     
     let planeNode = SCNNode(geometry: plane)
     let x = CGFloat(planeAnchor.center.x)

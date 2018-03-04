@@ -112,7 +112,7 @@ class MealTableViewController: UITableViewController {
           //////
           //Sending get requets to server
           
-          let url = URL(string: "http://1917a9e6.ngrok.io/foodtype?food=" + destinationViewController.sceneName!)
+          let url = URL(string: "http://1917a9e6.ngrok.io/foodtype?food=" + meals[indexPath.row].name)
           print(url)
           var request = URLRequest(url: url!)
           
