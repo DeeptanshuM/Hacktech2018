@@ -108,6 +108,23 @@ class MealTableViewController: UITableViewController {
         
         if let indexPath = tableView.indexPathForSelectedRow {
             destinationViewController.sceneName = meals[indexPath.row].name
+          
+          //////
+          //Sending get requets to server
+          
+          let url = URL(string: "http://1917a9e6.ngrok.io/foodtype?food=" + destinationViewController.sceneName!)
+          print(url)
+          var request = URLRequest(url: url!)
+          
+          let task = URLSession.shared.dataTask(with: url!) { data, response, error in
+            guard error == nil else {
+              print(error!)
+              return
+            }
+          }
+          
+          //////
+          
         }
     }
     

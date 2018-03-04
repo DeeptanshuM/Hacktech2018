@@ -44,6 +44,16 @@ class ARViewController: UIViewController {
     sceneView.automaticallyUpdatesLighting = true
   }
   
+  func addfoodToSceneViewWhenHorizontalPlaneDetected(x: CGFloat, y: CGFloat, z: CGFloat){
+    let fileName = sceneName! + ".scn"
+    //print(fileName)
+    
+    guard let foodScene = SCNScene(named: fileName),
+      let foodNode = foodScene.rootNode.childNode(withName: "container", recursively: false)
+      else { print("WTF");return }
+    foodNode.position = SCNVector3(x,y,z)
+    sceneView.scene.rootNode.addChildNode(foodNode)
+  }
   @objc func addfoodToSceneView(withGestureRecognizer recognizer: UIGestureRecognizer) {
     let tapLocation = recognizer.location(in: sceneView)
     let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
@@ -90,6 +100,8 @@ extension ARViewController: ARSCNViewDelegate {
     let width = CGFloat(planeAnchor.extent.x)
     let height = CGFloat(planeAnchor.extent.z)
     let plane = SCNPlane(width: width, height: height)
+    //let plane = SCNCylinder(radius: width, height: height, orientation: .horizontal);
+   
     plane.materials.first?.diffuse.contents = UIColor.transparentLightBlue
     
     let planeNode = SCNNode(geometry: plane)
@@ -100,7 +112,6 @@ extension ARViewController: ARSCNViewDelegate {
     planeNode.eulerAngles.x = -.pi / 2
     
     node.addChildNode(planeNode)
-    
   }
   
   func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
