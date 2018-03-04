@@ -53,6 +53,40 @@
             </objects>
             <point key="canvasLocation" x="1473" y="34"/>
         </scene>
+        <!--AR View Controller-->
+        <scene sceneID="hKM-RK-0jm">
+            <objects>
+                <viewController id="ogE-xp-5ea" userLabel="AR View Controller" customClass="ARViewController" customModule="Hacktech2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SJG-QT-BHp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYE-DN-huZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZYE-DN-huZ" firstAttribute="top" secondItem="zUL-0F-gMr" secondAttribute="top" id="0N3-z1-4ny"/>
+                            <constraint firstItem="ZYE-DN-huZ" firstAttribute="leading" secondItem="zUL-0F-gMr" secondAttribute="leading" id="2aZ-jb-F1b"/>
+                            <constraint firstItem="ZYE-DN-huZ" firstAttribute="top" secondItem="zUL-0F-gMr" secondAttribute="top" id="PwI-I6-f1E"/>
+                            <constraint firstItem="zUL-0F-gMr" firstAttribute="bottom" secondItem="ZYE-DN-huZ" secondAttribute="bottom" id="V5Q-ly-eYw"/>
+                            <constraint firstItem="ZYE-DN-huZ" firstAttribute="leading" secondItem="zUL-0F-gMr" secondAttribute="leading" id="ZXE-XA-9pb"/>
+                            <constraint firstItem="ZYE-DN-huZ" firstAttribute="leading" secondItem="zUL-0F-gMr" secondAttribute="leading" id="aWY-FL-Arc"/>
+                            <constraint firstItem="ZYE-DN-huZ" firstAttribute="trailing" secondItem="zUL-0F-gMr" secondAttribute="trailing" id="feR-a4-OUY"/>
+                            <constraint firstItem="ZYE-DN-huZ" firstAttribute="trailing" secondItem="zUL-0F-gMr" secondAttribute="trailing" id="jTr-aT-9cM"/>
+                            <constraint firstItem="zUL-0F-gMr" firstAttribute="trailing" secondItem="ZYE-DN-huZ" secondAttribute="trailing" id="zwC-cD-p7P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zUL-0F-gMr"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="ZYE-DN-huZ" id="GCz-PN-e8j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mkc-yi-fJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1473" y="752"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>

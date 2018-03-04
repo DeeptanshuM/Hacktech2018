@@ -13,6 +13,7 @@
 		AE257395204B780B00993362 /* Hacktech2018.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE257393204B780B00993362 /* Hacktech2018.xcdatamodeld */; };
 		AE257397204B780B00993362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE257396204B780B00993362 /* Assets.xcassets */; };
 		AE25739A204B780B00993362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE257398204B780B00993362 /* LaunchScreen.storyboard */; };
+		AE482E81204BFBF5006537EF /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE482E80204BFBF5006537EF /* ARViewController.swift */; };
 		D6A0C3FE204BED79006042F9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0C3FD204BED79006042F9 /* Meal.swift */; };
 		D6A0C401204BEF46006042F9 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0C3FF204BEF46006042F9 /* MealTableViewController.swift */; };
 		D6A0C402204BEF46006042F9 /* MealTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A0C400204BEF46006042F9 /* MealTableViewController.xib */; };
@@ -28,6 +29,7 @@
 		AE257396204B780B00993362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE257399204B780B00993362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE25739B204B780B00993362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE482E80204BFBF5006537EF /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		D6A0C3FD204BED79006042F9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		D6A0C3FF204BEF46006042F9 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		D6A0C400204BEF46006042F9 /* MealTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewController.xib; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				AE25739B204B780B00993362 /* Info.plist */,
 				AE257393204B780B00993362 /* Hacktech2018.xcdatamodeld */,
 				D6A0C3FD204BED79006042F9 /* Meal.swift */,
+				AE482E80204BFBF5006537EF /* ARViewController.swift */,
 			);
 			path = Hacktech2018;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE482E81204BFBF5006537EF /* ARViewController.swift in Sources */,
 				D6A0C3FE204BED79006042F9 /* Meal.swift in Sources */,
 				AE25738F204B780B00993362 /* ViewController.swift in Sources */,
 				D6A0C404204BF2C2006042F9 /* MealTableViewCell.swift in Sources */,
@@ -295,10 +299,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8S559C7XJA;
+				DEVELOPMENT_TEAM = 8R2RDVLJNC;
 				INFOPLIST_FILE = Hacktech2018/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.RamGoli.Hacktech2018;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeeptanshuMalik.Hacktech2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,10 +315,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8S559C7XJA;
+				DEVELOPMENT_TEAM = 8R2RDVLJNC;
 				INFOPLIST_FILE = Hacktech2018/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.RamGoli.Hacktech2018;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeeptanshuMalik.Hacktech2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
